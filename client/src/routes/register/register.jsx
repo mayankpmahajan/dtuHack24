@@ -9,6 +9,21 @@ function Register() {
   const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
+  const googleAuth =async(e)=>{
+    setIsLoading(true)
+    setError("")
+    e.preventDefault()
+      try{
+        const res = await apiRequest.get('/google/login');
+      }
+      catch(err){
+        console.log("Error hoggya bklll")
+        setError(err.response.data.message);
+      }
+      finally{
+        setIsLoading(false)
+      }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,6 +58,10 @@ function Register() {
           <input name="email" type="text" placeholder="Email" />
           <input name="password" type="password" placeholder="Password" />
           <button disabled={isLoading}>Register</button>
+          <div>
+            <button className="pass" onClick={googleAuth}>Login via Google</button>
+            <button className="pass">Login via Github</button>
+          </div>
           {error && <span>{error}</span>}
           <Link to="/login">Do you have an account?</Link>
         </form>

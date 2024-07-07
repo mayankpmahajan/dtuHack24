@@ -33,6 +33,17 @@
           background-color: #bed9d8;
           cursor: not-allowed;
         }
+        
+      }
+      .pass{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 4px;
+        background-color: teal;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
       }
 
       span {
