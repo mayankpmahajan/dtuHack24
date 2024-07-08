@@ -1,28 +1,45 @@
+
 .login {
+  background-color: black;
   height: 100%;
   display: flex;
-
+  background-image: url("/stockmarket.webp");
+  background-size: contain;
+  align-items: center;
   .formContainer {
-    flex: 3;
-    height: 100%;
+    
+    flex: 5;                                                                                                                      
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    // background-color: #9865FF;
+    justify-content:left;
+    margin: 4%;
+    
     form {
-      display: flex;
+      z-index: 1;
+      background-color: rgba(3,130,172,0.1) ;
+      padding: 8%;
+      border-radius: 12%;
+      display: flex;  
       flex-direction: column;
       gap: 20px;
-
+      h1{
+        color: white;
+      }
       input{
-        padding: 20px;
-        border: 1px solid gray;
-        border-radius: 5px;
+        background-color: rgba(239,239,239,0.41);
+        color: white;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 25px;
+      }
+      ::placeholder{
+        color:white;
       }
 
       button{
         padding: 20px;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
         background-color: teal;
         color: white;
@@ -47,15 +64,10 @@
       }
     }
   }
-
-  .imgContainer {
-    flex: 2;
-    background-color: #fcf5f3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 100%;
-    }
+  img{
+    margin-top: 0px;
+    width: 100%;
   }
+  
+  
 }

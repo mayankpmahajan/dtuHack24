@@ -13,7 +13,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("")
-    setIsLoading(true);
+    setIsLoading(true);     
     const formData = new FormData(e.target);
 
     const username = formData.get("username");
