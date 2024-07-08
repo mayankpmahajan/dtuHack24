@@ -16,7 +16,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 const CLIENT_URL = "http://localhost:5173"
 app.use(cors({
-  origin: [CLIENT_URL,"https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A8800%2Fapi%2Fauth%2Fauth%2Fgoogle%2Fcallback&scope=profile&client_id=105310426288-j3mdbl3r3944a4uiiu1p5cm667f0ee0s.apps.googleusercontent.com&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow"],
+  origin: CLIENT_URL,
   methods: "GET,POST,PUT,DELETE",
   credentials: true,
 })
