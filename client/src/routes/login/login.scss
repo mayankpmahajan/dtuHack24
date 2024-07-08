@@ -1,10 +1,13 @@
 
 .login {
-  background-color: black;
-  height: 100%;
+  height:100%;
   display: flex;
-  background-image: url("/stockmarket.webp");
-  background-size: contain;
+  background-image: url("/bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  justify-content: left;
   align-items: center;
   .formContainer {
     
@@ -12,23 +15,26 @@
     display: flex;
     align-items: center;
     // background-color: #9865FF;
-    justify-content:left;
+    // justify-content:center;
     margin: 4%;
     
     form {
-      z-index: 1;
-      background-color: rgba(3,130,172,0.1) ;
-      padding: 8%;
+      // z-index: 1;
+      background-color: hsla(35, 27%, 62%, 0.245);
+      padding:  5% 7%;
       border-radius: 12%;
       display: flex;  
       flex-direction: column;
-      gap: 20px;
+      align-items: left;
+      justify-content: space-around;
+      gap: 25px;
       h1{
         color: white;
       }
       input{
-        background-color: rgba(239,239,239,0.41);
+        background-color: rgba(231, 217, 184, 0.613);
         color: white;
+        width: 100%;
         padding: 20px 20px;
         border: none;
         border-radius: 25px;
@@ -41,7 +47,7 @@
         padding: 20px;
         border-radius: 25px;
         border: none;
-        background-color: teal;
+        background-color: rgba(0, 128, 128, 0.60);
         color: white;
         font-weight: bold;
         cursor: pointer;
@@ -64,10 +70,7 @@
       }
     }
   }
-  img{
-    margin-top: 0px;
-    width: 100%;
-  }
+  
   
   
 }
