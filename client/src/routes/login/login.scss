@@ -45,6 +45,7 @@
       }
 
       button{
+        width: 100%;
         padding: 20px;
         border-radius: 25px;
         border: none;
@@ -71,11 +72,28 @@
       }
     }
   }
-  @media (max-width:768px){
+  @media (max-width:1336px){
+
     .formContainer{
       justify-content: center;
+      form{
+        align-items: center;
+        background-blend-mode: darken;
+        background-color: hsla(36, 17%, 59%, 0.73);
+        a{
+          color: white;
+        }
+        
+      }
     }
   }
+  @media (max-width:500px) {
+    .formContainer form{
+      padding : 40px 40px;
+      gap : 15px;
+    }
+  }
+  
   }
   
   
