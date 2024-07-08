@@ -5,7 +5,7 @@
   background-image: url("/bg.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:scroll;
   background-position: center;
   justify-content: left;
   align-items: center;
@@ -15,18 +15,18 @@
     display: flex;
     align-items: center;
     // background-color: #9865FF;
-    // justify-content:center;
+    justify-content:left;
     margin: 4%;
     
     form {
       // z-index: 1;
       background-color: hsla(35, 27%, 62%, 0.245);
-      padding:  5% 7%;
+      padding: 70px 70px;
       border-radius: 12%;
       display: flex;  
       flex-direction: column;
       align-items: left;
-      justify-content: space-around;
+      // justify-content: space-around;
       gap: 25px;
       h1{
         color: white;
@@ -41,6 +41,7 @@
       }
       ::placeholder{
         color:white;
+        font-style: italic;
       }
 
       button{
@@ -70,7 +71,13 @@
       }
     }
   }
+  @media (max-width:768px){
+    .formContainer{
+      justify-content: center;
+    }
+  }
+  }
   
   
   
-}
+
