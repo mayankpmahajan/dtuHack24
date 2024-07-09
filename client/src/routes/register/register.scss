@@ -85,9 +85,9 @@
         }
       }
     }
-    @media (max-width:500px){
+    @media (max-width:500px) or (max-height : 600px){
       .formContainer form{
-        padding : 40px 28px;
+        padding : 25px 40px;
         gap : 15px;
     }
   }
