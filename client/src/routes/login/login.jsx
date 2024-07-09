@@ -7,10 +7,9 @@ import { AuthContext } from "../../context/AuthContext";
 function Login() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
   const {updateUser} = useContext(AuthContext)
-
   const navigate = useNavigate();
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,6 +35,7 @@ function Login() {
       setIsLoading(false);
     }
   };
+  
   return (
     <div className="login">
       <div className="formContainer">
