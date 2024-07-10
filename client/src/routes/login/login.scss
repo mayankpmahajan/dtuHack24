@@ -1,30 +1,55 @@
-.login {
-  height: 100%;
-  display: flex;
 
+.login {
+  height:100%;
+  display: flex;
+  background-image: url("/bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: center;
+  justify-content: left;
+  align-items: center;
   .formContainer {
-    flex: 3;
-    height: 100%;
+    
+    flex: 5;                                                                                                                      
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    // background-color: #9865FF;
+    justify-content:left;
+    margin: 4%;
+    
     form {
-      display: flex;
+      // z-index: 1;
+      background-color: hsla(35, 27%, 62%, 0.245);
+      padding: 70px 70px;
+      border-radius: 12%;
+      display: flex;  
       flex-direction: column;
-      gap: 20px;
-
+      align-items: left;
+      // justify-content: space-around;
+      gap: 25px;
+      h1{
+        color: white;
+      }
       input{
-        padding: 20px;
-        border: 1px solid gray;
-        border-radius: 5px;
+        background-color: rgba(231, 217, 184, 0.613);
+        color: white;
+        width: 100%;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 25px;
+      }
+      ::placeholder{
+        color:white;
+        font-style: italic;
       }
 
       button{
+        width: 100%;
         padding: 20px;
-        border-radius: 5px;
+        border-radius: 25px;
         border: none;
-        background-color: teal;
+        background-color: rgba(0, 128, 128, 0.60);
         color: white;
         font-weight: bold;
         cursor: pointer;
@@ -47,15 +72,30 @@
       }
     }
   }
+  @media (max-width:1336px){
 
-  .imgContainer {
-    flex: 2;
-    background-color: #fcf5f3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 100%;
+    .formContainer{
+      justify-content: center;
+      form{
+        align-items: center;
+        background-blend-mode: darken;
+        background-color: hsla(36, 17%, 59%, 0.73);
+        a{
+          color: white;
+        }
+        
+      }
     }
   }
-}
+  @media (max-width:500px) or (max-height : 600px) {
+    .formContainer form{
+      padding : 40px 40px;
+      gap : 15px;
+    }
+  }
+  
+  }
+  
+  
+  
+

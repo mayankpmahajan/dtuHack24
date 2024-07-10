@@ -37,7 +37,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("")
-    setIsLoading(true);
+    setIsLoading(true);     
     const formData = new FormData(e.target);
 
     const username = formData.get("username");
@@ -82,12 +82,10 @@ function Register() {
             <button className="pass">Login via Github</button>
           </div>
           {error && <span>{error}</span>}
-          <Link to="/login">Do you have an account?</Link>
+          <Link to="/login">   Do you have an account?</Link>
         </form>
       </div>
-      <div className="imgContainer">
-        <img src="/bg.png" alt="" />
-      </div>
+     
     </div>
   );
 }
