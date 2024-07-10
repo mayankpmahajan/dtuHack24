@@ -1,0 +1,79 @@
+*{
+    background-color:black;
+}
+
+.form {
+    max-width: 50rem;
+    margin: auto;
+    color: white;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+   .radio-group input[type="radio"] {
+    display: none;
+  } 
+  
+  .radio-group input[type="radio"]:checked + label {
+    color: orangered; /* Change the color to your desired color */
+ /* Change the background color to your desired color */
+  }
+  
+
+  .radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+.btn-secondary{
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-right: 2rem;
+  background-size: cover;
+}
+
+.kanye{
+  background-image: url('../assets/images/Kanye.jpg');
+}
+
+.guruji{
+  background-image: url('../assets/images/guruji.jfif');
+}
+
+.williams{
+  background-image: url('../assets/images/will.jfif');
+}
+
+.snoop{
+  background-image: url('../assets/images/Snoop.jfif');
+
+}
