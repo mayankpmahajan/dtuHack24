@@ -6,6 +6,9 @@ import Register from "./routes/register/register";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
 import {profilePageLoader} from "./lib/loaders";
+import Analysis_form from "./routes/analysis_form/analysis_form";
+
+
 
 function App() {
   const router = createBrowserRouter([
@@ -57,6 +60,10 @@ function App() {
         },
       ],
     },
+    {
+      path:"/anal",
+      element:<Analysis_form/>
+    }
   ]);
 
   return <RouterProvider router={router} />;

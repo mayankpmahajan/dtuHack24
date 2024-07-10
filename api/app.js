@@ -9,6 +9,7 @@ import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
 import expressSession from "express-session"
 import passport from 'passport'
+import analRoute from "./routes/anal.route.js"
 import {createProxyMiddleware} from 'http-proxy-middleware'
 
 const app = express();
@@ -43,6 +44,7 @@ app.use("/api/posts", postRoute);
 app.use("/api/test", testRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
+app.use("/api/anal",analRoute)
 
 app.listen(8800, () => {
   console.log("Server is running!");
